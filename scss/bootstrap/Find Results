@@ -1,0 +1,75 @@
+Searching 115 files for "main-menubar"
+
+/Users/thiagoalvesmacedo/Desktop/dna/index.html:
+   39  								<a href="#home"><img src="img/logo.png" alt=""></a>
+   40  							</div>
+   41: 							<div class="main-menubar d-flex align-items-center">
+   42  								<nav class="hide">
+   43  									<a href="#home">Home</a>
+
+/Users/thiagoalvesmacedo/Desktop/dna/css/main.css:
+ 1887  }
+ 1888  
+ 1889: .main-menubar {
+ 1890    position: relative;
+ 1891  }
+
+/Users/thiagoalvesmacedo/Desktop/dna/js/main.js:
+   36  
+   37    // Select all links with hashes
+   38:   $('.main-menubar a[href*="#"]')
+   39      // Remove links that don't actually link to anything
+   40      .not('[href="#"]')
+
+/Users/thiagoalvesmacedo/Desktop/dna/scss/theme/_header.scss:
+   17  	}
+   18  }
+   19: .main-menubar {
+   20  	position: relative;
+   21  }
+
+4 matches across 4 files
+
+
+Searching 115 files for "lnr lnr-menu"
+
+/Users/thiagoalvesmacedo/Desktop/dna/index.html:
+   46  									<a href="#consultant">Contato</a>
+   47  								</nav>
+   48: 								<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
+   49  							</div>
+   50  						</div>
+
+1 match in 1 file
+
+
+Searching 115 files for "nav a"
+
+/Users/thiagoalvesmacedo/Desktop/dna/css/main.css:
+ 1911      background: #fff;
+ 1912    }
+ 1913:   nav a {
+ 1914      color: #241e90 !important;
+ 1915    }
+ 1916:   nav a:hover {
+ 1917      color: #241e90;
+ 1918    }
+ ....
+ 1923  }
+ 1924  
+ 1925: nav a {
+ 1926    color: #000;
+ 1927    font-size: 12px;
+ ....
+ 1933  
+ 1934  @media (max-width: 767px) {
+ 1935:   nav a {
+ 1936      margin: 5px 25px;
+ 1937    }
+ 1938  }
+ 1939  
+ 1940: nav a:hover {
+ 1941    color: #241e90;
+ 1942  }
+
+5 matches in 1 file
