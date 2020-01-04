@@ -1993,6 +1993,15 @@ nav a:hover {
   -webkit-text-fill-color: transparent;
 }
 
+
+.custom-icon{
+ height: auto; 
+    width: auto; 
+    max-width: 40px; 
+    max-height: 40px;
+}
+
+
 .primary-btn {
   line-height: 42px;
   padding-left: 30px;
