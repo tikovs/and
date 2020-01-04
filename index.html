@@ -164,26 +164,31 @@
 						</div>
 						<div class="col-lg-6 col-md-12 about-right no-padding">
 							<h1>Contato</h1>
-							<form class="booking-form"   action="https://formspree.io/xjvkponq" method="POST">
+							<form class="booking-form"  id="contact-form">
 								 	<div class="row">
 								 		<div class="col-lg-12 d-flex flex-column">
-							 				<input name="name" placeholder="Nome" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nome'" class="form-control mt-20" required="true" type="text" required>
+							 				<input name="nome" placeholder="Nome" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nome'" class="form-control mt-20" required="true" type="text" required>
+								 		</div>
+								 		<div class="col-lg-12 d-flex flex-column">
+							 				<input name="email" placeholder="E-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-mail'" class="form-control mt-20" required="true"  id="emailContact" type="email" required>
 								 		</div>
 							 			<div class="col-lg-6 d-flex flex-column">
-											<input name="phone" placeholder="(31)99999-9999" onfocus="this.placeholder = ''" onblur="this.placeholder = '(31)99999-9999'" class="form-control mt-20" required="" type="number" required>
+											<input name="celular" placeholder="(31)99999-9999" onfocus="this.placeholder = ''" onblur="this.placeholder = '(31)99999-9999'" class="form-control mt-20" required="" type="number" required>
 										</div>
 										<div class="col-lg-6 d-flex flex-column">
-											<input id="datepicker2" name="app-date" class="form-control mt-20"  onblur="this.placeholder = 'Assunto'" type="text" placeholder="Assunto" required>
+											<input name="assunto" class="form-control mt-20"  onblur="this.placeholder = 'Assunto'" type="text" placeholder="Assunto" required>
 										</div>
 										<div class="col-lg-12 flex-column">
-											<textarea class="form-control mt-20" name="message" placeholder="Deixe aqui sua mensagem" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deixe aqui sua mensagem.'" required=""></textarea>
+											<textarea class="form-control mt-20" name="mensagem" placeholder="Deixe aqui sua mensagem" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deixe aqui sua mensagem.'" required=""></textarea>
 										</div>
 
 										<div class="col-lg-12 d-flex justify-content-end send-btn">
-											<button class="primary-btn2  mt-20" id="my-form-button" type="submit"> Enviar<span class="lnr lnr-arrow-right"></span></button>
+											<button class="primary-btn2  mt-20"  type="submit"> Enviar<span class="lnr lnr-arrow-right"></span></button>
 										</div>
 
-										 <p id="my-form-status"></p>
+										 <div class="alert alert-danger center-block submit-fail-contact display-none mt-3">Por favor preencha o campo de e-mail.<br></div>
+	                   <div class="alert alert-success center-block submit-success-contact display-none mt-3">Recebemos o seu e-mail. Obrigado.</div>
+
 									</div>
 					  		</form>
 							</div>
@@ -193,7 +198,7 @@
 			</section>
 			<!-- End about Area -->
 
-			<!-- Start consultans Area -->
+			<!-- Start consultans Area 
 			<section class="consultans-area section-gap" id="consultant">
 				<div class="container">
 					<div class="row d-flex justify-content-center">
@@ -301,7 +306,7 @@
 			<!-- end fact Area -->
 
 			<!-- Start blog Area -->
-			<section class="blog-area facts-area section-gap">
+			<section class="blog-area section-gap">
 				<div class="container">
 					<div class="row justify-content-center">
 						<div class="col-md-8 pb-30 header-text">
@@ -364,16 +369,13 @@
 										<div class="form-group row" style="width: 100%">
 											<div class="col-lg-8 col-md-12">
 												<input name="email" placeholder="Digite seu email" id="emailSubscribe"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Digite seu email'" required="" type="email">
-												<div style="position: absolute; left: -5000px;">
-													<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-												</div>
 											</div>
 
 											<div class="col-lg-4 col-md-12">
 												<button class="nw-btn primary-btn" type="submit">Subscribe<span class="lnr lnr-arrow-right"></span></button>
 											</div>
-											  <div class="alert alert-danger center-block submit-fail display-none mt-2">Por favor preencha o campo de e-mail.<br></div>
-	                      <div class="alert alert-success center-block submit-success display-none">Obrigada por essa conexão.</div>
+											  <div class="alert alert-danger center-block submit-fail display-none mt-3">Por favor preencha o campo de e-mail.<br></div>
+	                      <div class="alert alert-success center-block submit-success display-none mt-3">Recebemos o seu e-mail. Obrigado.</div>
 										</div>
 									</form>
 								</div>
@@ -452,31 +454,33 @@
                 $(this).hide();
             })
 
-          /**  $('#email-form').submit(function(e) {
-                var email = $('#emailMessage');
-                var subject = $('#subject');
-                var name = $('#name');
-                var message = $('#message');
 
-                if (email.val() === "" || subject.val() === "" || name.val() === "" || message.val() === "") {
-                    $('.submit-email-fail').fadeToggle(400);
+
+              $('#contact-form').submit(function(e) {
+                var email = $('#emailContact');
+
+                if (email.val() === "") {
+                    $('.submit-fail-contact').fadeToggle(400);
                     return false;
                 } else {
                     $.ajax({
                         method: 'POST',
-                        url: '//formspree.io/mvopzgzw',
-                        data: $('#email-form').serialize(),
+                        url: '//formspree.io/xjvkponq',
+                        data: $('#conctact-form').serialize(),
                         datatype: 'json'
                     });
                     e.preventDefault();
                     $(this).get(0).reset();
-                    $('.submit-email-success').fadeToggle(400);
+                    $('.submit-success-contact').fadeToggle(400);
                 }
             });
 
-            $('.submit-email-fail, .submit-email-success').click(function() {
+            $('.submit-fail-contact, .submit-success-contact').click(function() {
                 $(this).hide();
-            }) */
+            })
+
+
+
         });
         
 		</script>
