@@ -2011,6 +2011,7 @@ nav a:hover {
   display: inline-block;
   font-weight: 500;
   position: relative;
+  border-color: white;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
