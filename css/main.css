@@ -1915,10 +1915,10 @@ nav {
     background: #fff;
   }
   nav a {
-    color: #241e90 !important;
+    color: #325083 !important;
   }
   nav a:hover {
-    color: #241e90;
+    color: #325083;
   }
 }
 
@@ -1927,7 +1927,7 @@ nav.hide {
 }
 
 nav a {
-  color: #000;
+  color: #325083;
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
@@ -1998,7 +1998,6 @@ nav a:hover {
   padding-left: 30px;
   padding-right: 60px;
   border-radius: 25px;
-  border: none;
   color: #fff;
   display: inline-block;
   font-weight: 500;
