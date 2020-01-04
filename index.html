@@ -431,7 +431,28 @@
 
 
 			  $(document).ready(function() {
- 
+            $('#subscribe-form').submit(function(e) {
+                var email = $('#emailSubscribe');
+
+                if (email.val() === "") {
+                    $('.submit-fail').fadeToggle(400);
+                    return false;
+                } else {
+                    $.ajax({
+                        method: 'POST',
+                        url: '//formspree.io/mnqnozey',
+                        data: $('#subscribe-form').serialize(),
+                        datatype: 'json'
+                    });
+                    e.preventDefault();
+                    $(this).get(0).reset();
+                    $('.submit-success').fadeToggle(400);
+                }
+            });
+
+            $('.submit-fail, .submit-success').click(function() {
+                $(this).hide();
+            })
 
 
 
@@ -445,7 +466,7 @@
                     $.ajax({
                         method: 'POST',
                         url: '//formspree.io/mnqnozey',
-                        data: $('#conctact-form').serialize(),
+                        data: $('#contact-form').serialize(),
                         datatype: 'json'
                     });
                     e.preventDefault();
