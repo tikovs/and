@@ -167,19 +167,19 @@
 							<form class="booking-form"  id="contact-form">
 								 	<div class="row">
 								 		<div class="col-lg-12 d-flex flex-column">
-							 				<input name="name" placeholder="Nome"  id="nameContact" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nome'" class="form-control mt-20" required="true" type="text" required>
+							 				<input name="Nome" placeholder="Nome"  id="nameContact" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nome'" class="form-control mt-20" required="true" type="text" required>
 								 		</div>
 								 		<div class="col-lg-12 d-flex flex-column">
-							 				<input name="_replyto" placeholder="E-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-mail'" class="form-control mt-20" required="true"  id="emailContact" type="email" required>
+							 				<input name="E-mail" placeholder="E-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-mail'" class="form-control mt-20" required="true"  id="emailContact" type="email" required>
 								 		</div>
 							 			<div class="col-lg-6 d-flex flex-column">
-											<input name="_phone" placeholder="(31)99999-9999" id="phoneContact"  onfocus="this.placeholder = ''" onblur="this.placeholder = '(31)99999-9999'" class="form-control mt-20" required="" type="number" required>
+											<input name="Celular" placeholder="(31)99999-9999" id="phoneContact"  onfocus="this.placeholder = ''" onblur="this.placeholder = '(31)99999-9999'" class="form-control mt-20" required="" type="number" required>
 										</div>
 										<div class="col-lg-6 d-flex flex-column">
-											<input name="_subject" class="form-control mt-20" id="subjectContact"  onblur="this.placeholder = 'Assunto'" type="text" placeholder="Assunto" required>
+											<input name="Assunto" class="form-control mt-20" id="subjectContact"  onblur="this.placeholder = 'Assunto'" type="text" placeholder="Assunto" required>
 										</div>
 										<div class="col-lg-12 flex-column">
-											<textarea class="form-control mt-20" name="message"  id="messageContact" placeholder="Deixe aqui sua mensagem" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deixe aqui sua mensagem.'" required=""></textarea>
+											<textarea class="form-control mt-20" name="Mensagem"  id="messageContact" placeholder="Deixe aqui sua mensagem" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deixe aqui sua mensagem.'" required=""></textarea>
 										</div>
 
 										<div class="col-lg-12 d-flex justify-content-end send-btn">
@@ -465,7 +465,7 @@
                 } else {
                     $.ajax({
                         method: 'POST',
-                        url: '//formspree.io/mnqnozey',
+                        url: '//formspree.io/xjvkponq',
                         data: $('#contact-form').serialize(),
                         datatype: 'json'
                     });
