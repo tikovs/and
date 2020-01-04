@@ -2138,18 +2138,18 @@ nav a:hover {
 }
 
 .banner-area .fullscreen {
-  height: 550px !important;
+  max-height: 803px !important;
 }
 
 @media (max-width: 768px) {
   .banner-area .fullscreen {
-    height: 800px !important;
+    max-height: 503px !important;
   }
 }
 
 @media (max-width: 991px) {
   .banner-content {
-    margin-top: 100px;
+    margin-top: 10px;
     text-align: center;
   }
 }
