@@ -4,7 +4,7 @@
 /* Mobile Layout: 320px */
 /* Wide Mobile Layout: 480px */
 /* =================================== */
-/*  Basic Style 
+/*  Basic Style
 /* =================================== */
 ::-moz-selection {
   /* Code for Firefox */
@@ -1995,9 +1995,9 @@ nav a:hover {
 
 
 .custom-icon{
- height: auto; 
-    width: auto; 
-    max-width: 40px; 
+ height: auto;
+    width: auto;
+    max-width: 40px;
     max-height: 40px;
 }
 
@@ -2733,18 +2733,18 @@ p {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  
+
   a {
     display: flex;
     align-items: center;
     position: relative;
     width: 50%;
     background: white;
-    
+
     @media only screen and (min-width: $lg) {
       width: 25%;
     }
-    
+
     img {
       display: block;
       width: 100%;
@@ -2758,3 +2758,16 @@ p {
 }
 
 
+.box-promotion{
+	border-radius: 10px;
+  max-width: 120px;
+  min-width: 102px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right:2%;
+  max-height: 300px;
+  min-height: 180px;
+	background: #ededf3;
+	box-shadow:  5px 5px 10px #dadae0,
+    -5px -5px 10px #ffffff;
+}

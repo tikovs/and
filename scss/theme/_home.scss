@@ -160,7 +160,7 @@
 	background-color:#fff;
 	padding:20px 0;
 	width: 100% !important;
-	box-shadow: -21.213px 21.213px 30px 0px rgba(158,158,158,0.3);	
+	box-shadow: -21.213px 21.213px 30px 0px rgba(158,158,158,0.3);
 }
 
 .sticky-wrapper{
@@ -168,12 +168,12 @@
 }
 
 .banner-area {
-	background-color:$offwhite;	
+	background-color:$offwhite;
 	.fullscreen {
 		height:850px !important;
 		@media(max-width:768px){
 			height: 800px !important;
-		}		
+		}
 	}
 }
 .banner-content {
@@ -186,7 +186,7 @@
 		font-size: 58px;
 		font-weight: 700;
 		line-height: 1.15em;
-		margin-bottom:20px;	
+		margin-bottom:20px;
 		@include media-breakpoint-down(md) {
 			font-size: 36px;
 		}
@@ -198,7 +198,7 @@
 
 		@include media-breakpoint-down (lg) {
 				font-size:45px;
-		}	
+		}
 
 		@media ( max-width:414px ) {
 			font-size:40px;
@@ -342,7 +342,7 @@
 	}
 
 }
-	
+
 
 //--------- end about Area -------------//
 
@@ -350,7 +350,7 @@
 
 
 	.consultans-area{
-		background-color:$offwhite;	
+		background-color:$offwhite;
 		.header-text{
 			text-align:center;
 			h1{
@@ -361,7 +361,7 @@
 
 
 	.single-con{
-		
+
 		.single-con .title{
 		  color: #1a1a1a;
 		  text-align: center;
@@ -397,7 +397,7 @@
 		   @media (max-width:413px) {
 				left: 12px;
 				width: 92%;
-		   }		   
+		   }
 		}
 
 		.content:hover .content-overlay{
@@ -422,7 +422,7 @@
 		  transition: all 0.3s ease-in-out 0s;
 		  h4{
 		  	color:#fff;
-		  }	
+		  }
 		}
 
 		.content-title{
@@ -494,11 +494,11 @@
 	}
 
 	.single-blog{
-		
+
 		h4{
 			text-transform:uppercase;
 			font-weight:600;
-			letter-spacing:3px;	
+			letter-spacing:3px;
 			margin-top:35px;
 		}
 		a{
@@ -531,9 +531,9 @@
 			.meta{
 				margin-top:0px;
 			}
-			
-		}	
-	
+
+		}
+
 		.f-img{
 			@include transition();
 			&:hover{
@@ -605,7 +605,7 @@
 				}
 			}
 		}
-		
+
 		i{
 			color:#cccccc;
 			@include transition();
@@ -645,7 +645,7 @@
 			cursor:pointer;
 		}
 
-			
+
 		@media(max-width:1024px) {
 			.nw-btn{
 				margin-top:20px;
@@ -707,7 +707,7 @@
 		}
 	}
 
-		
+
 	.footer-bottom{
 		padding-top:80px;
 	}
@@ -724,8 +724,3 @@
 
 
 //--------- end footer Area -------------//
-
-
-
-
-
