@@ -1873,6 +1873,10 @@ body {
   position: relative;
 }
 
+.logo {
+  max-width: 50%;
+  max-height: 40%;
+}
 .default-header {
   padding: 5px 0;
   position: absolute;
