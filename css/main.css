@@ -51,7 +51,7 @@
 
 body {
   color: #777777;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.625em;
@@ -1878,6 +1878,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  margin-top:30px;
   width: 100%;
   z-index: 9;
 }
@@ -2892,4 +2893,27 @@ p {
   margin-bottom: 5%;
   box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
   border-radius: 10px;
+}
+
+.barra-fixa {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    background-color: #325083;
+    font-size: 12px;
+    overflow: hidden;
+    color: white;
+    font-weight: 600;
+    z-index: 10;
+}
+
+.fa-truck {
+  color: white;
+}
+
+.header-mensagem{
+  text-align: center;
 }
