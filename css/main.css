@@ -2531,6 +2531,7 @@ nav a:hover {
 .footer-area {
   padding-top: 100px;
   min-height: 100%;
+  min-height: 50vh;
   background-color: #325083;
 }
 
@@ -2613,6 +2614,7 @@ p {
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  margin-bottom: 20%;
 }
 
 @media (max-width: 1199px) {
@@ -2856,6 +2858,10 @@ p {
   right: 0;
 }
 
+.icon_whatsapp{
+  color:white;
+}
+
 @media (min-width:600px) {
   #map {
     height: 400px;
@@ -2921,4 +2927,8 @@ p {
 
 .header-mensagem{
   text-align: center;
+}
+
+.logo-svg {
+  width: 38%;
 }
