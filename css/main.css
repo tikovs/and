@@ -3010,7 +3010,8 @@ p {
   filter: brightness(0) saturate(100%) invert(29%) sepia(37%) saturate(1014%) hue-rotate(180deg) brightness(93%) contrast(92%);
 }
 
-.service-card .icon .lnr {
+.service-card .icon .lnr,
+.service-card .icon i {
   font-size: 156px;
   line-height: 1;
   color: #325083;
@@ -3044,7 +3045,8 @@ p {
   color: inherit;
 }
 
-.service-card:hover .icon .lnr {
+.service-card:hover .icon .lnr,
+.service-card:hover .icon i {
   color: #325083;
 }
 
@@ -3091,6 +3093,8 @@ p {
   }
 
   .services-title {
+    font-size: 22px;
+    line-height: 1.22;
     margin-bottom: 26px;
   }
 
@@ -3126,31 +3130,32 @@ p {
   .service-card:nth-child(odd) .icon,
   .service-card:nth-child(even) .icon {
     order: 0;
-    width: 122px;
-    min-width: 122px;
-    height: 122px;
+    width: 108px;
+    min-width: 108px;
+    height: 108px;
     margin: 0;
   }
 
   .service-card .icon img,
   .service-card .icon .custom-icon {
-    width: 92px;
-    height: 92px;
-    max-width: 92px;
-    max-height: 92px;
+    width: 80px;
+    height: 80px;
+    max-width: 80px;
+    max-height: 80px;
   }
 
-  .service-card .icon .lnr {
-    font-size: 92px;
+  .service-card .icon .lnr,
+  .service-card .icon i {
+    font-size: 80px;
   }
 
   .service-card h4 {
-    font-size: 24px;
+    font-size: 21px;
     margin-bottom: 8px;
   }
 
   .service-card p {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .reveal-card,
@@ -3184,8 +3189,8 @@ p {
   text-align: center;
 }
 
-.logo-svg {
-  width: 38%;
+.pharm-header .logo-svg {
+  width: 90%;
 }
 
 /* --------- Custom Header/Footer Redesign --------- */
@@ -3263,6 +3268,11 @@ p {
   background: radial-gradient(circle at 10% 10%, #3b5f9f 0%, #325083 45%, #22385d 100%);
   padding-top: 68px;
   padding-bottom: 26px;
+}
+
+.pharm-location {
+  background: radial-gradient(circle at 10% 10%, #3b5f9f 0%, #325083 45%, #22385d 100%);
+  padding: 28px 0;
 }
 
 .pharm-footer-top,
@@ -3418,8 +3428,8 @@ p {
 }
 
 @media (max-width: 991px) {
-  .logo-svg {
-    width: 64%;
+  .pharm-header .logo-svg {
+    width: 50%;
   }
 }
 
@@ -3446,9 +3456,6 @@ p {
     display: inline-block;
   }
 
-  .logo-svg {
-    width: 72%;
-  }
 }
 
 @media (max-width: 600px) {
