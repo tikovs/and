@@ -36,7 +36,6 @@
 			CSS
 			============================================= -->
     <link rel="stylesheet" href="css/linearicons.css" />
-    =
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="css/nice-select.css" />
@@ -69,6 +68,7 @@
   </head>
 
   <body>
+    <div id="inicio" aria-hidden="true"></div>
     <div class="container-body">
       <a href="https://api.whatsapp.com/send?phone=5531993688138">
         <container class="barra-fixa">
@@ -80,25 +80,31 @@
       </a>
 
       <!-- Start Header Area -->
-      <header class="default-header">
+      <header class="default-header pharm-header mb-5" id="home">
         <div class="container">
           <div class="header-wrap">
             <div
               class="header-top d-flex justify-content-between align-items-center"
             >
-              <div class="logo">
-                <a href="#home"
-                  ><img class="img-fluid logo-svg" src="img/logo.svg" />
+              <div class="logo pharm-logo-wrap">
+                <a href="#inicio" class="pharm-logo-link"
+                  ><img class="img-fluid logo-svg" src="img/logo.svg" alt="Drogaria Nova Aparecida" />
                 </a>
               </div>
               <div class="main-menubar d-flex align-items-center">
-                <nav class="hide">
-                  <a href="#ofertas">Ofertas</a>
-                  <a href="#sorteio">Sorteio</a>
+                <nav class="hide pharm-nav" aria-label="Menu principal">
+                  <a href="#inicio">Início</a>
+                  <a href="#servicos">Serviço</a>
                   <a href="#localizacao">Localização</a>
-                  <a href="#servicos">Serviços</a>
-                  <!--- <a href="#consultant">Contato</a> -->
+                  <a href="#contato">Contato</a>
                 </nav>
+                <a
+                  class="pharm-cta d-none d-lg-inline-flex"
+                  href="https://api.whatsapp.com/send?phone=5531993688138"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Peça pelo WhatsApp</a
+                >
                 <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
               </div>
             </div>
@@ -107,81 +113,112 @@
       </header>
       <!-- End Header Area -->
 
-      <!-- start banner Area -->
-
-      <section class="banner-area relative mt-5" id="ofertas">
-        <div class="container d-lg-none">
-          <div class="row d-flex justify-content-center">
-            <div class="box-promotion-mobile promotion-one"></div>
-            <div class="box-promotion-mobile promotion-two"></div>
-            <div class="box-promotion-mobile promotion-three"></div>
-            <div class="box-promotion-mobile promotion-four"></div>
-          </div>
-          <!--<div class="row fullscreen align-items-center justify-content-center" >
-							<div class="banner-content col-lg-6 col-md-12">
-								<h1 class="text-uppercase">
-									45 anos <br>
-									da nossa história
-								</h1>
-								<p>
-								A drogaria nova aparecida tem 45 anos de mercado e a nossa história não pode parar. Atendimento e atenção aos clientes são os nossos maiores valores.
-								</p>
-								<a  class="primary-btn2 mt-20 text-uppercase" href="https://api.whatsapp.com/send?phone=5531993688138">Faça seu pedido pelo Whatsapp<span class="lnr lnr-arrow-right"></span></a>
-							</div>
-							<div class="col-lg-6 d-flex align-self-end img-right  d-none d-lg-block">
-								<img class="img-fluid  d-none d-lg-block" src="img/header-img.png" alt="">
-							</div>
-						</div>-->
-        </div>
-
-        <div class="container d-none d-lg-block">
-          <div class="row d-flex justify-content-center">
-            <div class="box-promotion promotion-one"></div>
-            <div class="box-promotion promotion-two"></div>
-            <div class="box-promotion promotion-three"></div>
-            <div class="box-promotion promotion-four"></div>
-            <div class="box-promotion promotion-five"></div>
-            <div class="box-promotion promotion-six"></div>
-          </div>
-          <!--<div class="row fullscreen align-items-center justify-content-center" >
-							<div class="banner-content col-lg-6 col-md-12">
-								<h1 class="text-uppercase">
-									45 anos <br>
-									da nossa história
-								</h1>
-								<p>
-								A drogaria nova aparecida tem 45 anos de mercado e a nossa história não pode parar. Atendimento e atenção aos clientes são os nossos maiores valores.
-								</p>
-								<a  class="primary-btn2 mt-20 text-uppercase" href="https://api.whatsapp.com/send?phone=5531993688138">Faça seu pedido pelo Whatsapp<span class="lnr lnr-arrow-right"></span></a>
-							</div>
-							<div class="col-lg-6 d-flex align-self-end img-right  d-none d-lg-block">
-								<img class="img-fluid  d-none d-lg-block" src="img/header-img.png" alt="">
-							</div>
-						</div>-->
-        </div>
-      </section>
-      <!-- End banner Area -->
-      <section class="feature-area section-gap mt-2 mb-4" id="sorteio">
-        <div class="promotion-banner d-lg-block">
-          <a href="https://www.quebelezadepromo.com.br/">
-            <img class="img-fluid" src="img/promocao_site_grande.png" alt="" />
-          </a>
-        </div>
-
-        <div class="d-none d-lg-none promotion-banner">
-          <a href="https://www.quebelezadepromo.com.br/">
-            <img class="img-fluid" src="img/promocao_site.png" alt="" />
-          </a>
-        </div>
-      </section>
-
-      <section id="localizacao">
-        <div class="container mb-5">
-          <div class="row">
-            <div class="col-6">
-              <div id="map"></div>
+       <!-- Start feature Area -->
+      <section class="feature-area section-gap mt-5" id="servicos">
+        <div class="container box-grande">
+          <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+              <p class="services-eyebrow">Drogaria Nova Aparecida</p>
+              <h2 class="services-title">
+                Cuidado e atendimento de verdade:<br />
+                nossa missão com a sua saúde
+              </h2>
             </div>
-            <div class="col-6">
+          </div>
+          <div class="services-stack">
+            <div class="single-feature service-card reveal-card reveal-left pb-30">
+              <div class="icon">
+                <img class="" src="img/chest.png" alt="" />
+              </div>
+              <div class="desc">
+                <h4 class="text-uppercase">Assistência Farmacêutica</h4>
+                <p>
+                  Ações para proteção e recuperação da saúde, tanto individual
+                  como coletiva, tendo o medicamento como insumo essencial e
+                  visando o acesso e ao seu uso racional.
+                </p>
+              </div>
+            </div>
+            <div class="single-feature service-card reveal-card reveal-up pb-30">
+              <div class="icon">
+                <img class="custom-icon" src="img/siringa.png" alt="" />
+              </div>
+              <div class="desc">
+                <h4 class="text-uppercase">Aplicação de Injetáveis</h4>
+                <p>
+                  Nossos clientes dispõem do serviço deaplicação de
+                  injetáveis, devidamente supervisionado por um responsável
+                  técnico farmacêutico.
+                </p>
+              </div>
+            </div>
+            <div class="single-feature service-card reveal-card reveal-right">
+              <div class="icon">
+                <span class="lnr lnr-heart-pulse"></span>
+              </div>
+              <div class="desc">
+                <h4 class="text-uppercase">Aferição de Pressão</h4>
+                <p>
+                  Aferição de pressão mais assertiva utilizando o instrumento
+                  esfigmomanômetro.
+                </p>
+              </div>
+            </div>
+            <div class="single-feature service-card reveal-card reveal-right pb-30">
+              <div class="icon">
+                <img class="" src="img/glicose.png" alt="" />
+              </div>
+              <div class="desc">
+                <h4 class="text-uppercase">Aferição de Glicose</h4>
+                <p>
+                  Serviço de aferição a glicemia para prevenção ou
+                  monitoramento de diabetes.
+                </p>
+              </div>
+            </div>
+            <div class="single-feature service-card reveal-card reveal-left pb-30">
+              <div class="icon">
+                <img class="" src="img/brinco.png" alt="" />
+              </div>
+              <div class="desc">
+                <h4 class="text-uppercase">Colocação de Brincos</h4>
+                <p>
+                  Perfuração de lóbulo de orelha e colação dos brincos com
+                  todo processo de higienização.
+                </p>
+              </div>
+            </div>
+            <div class="single-feature service-card reveal-card reveal-up">
+              <div class="icon">
+                <img class="" src="img/entrega.png" alt="" />
+              </div>
+              <div class="desc">
+                <h4 class="text-uppercase">Entrega domiciliar</h4>
+                <p>
+                  Para seu maior conforto, faça seu pedido sem sair de casa
+                  via whatsapp, telefone ou celular e entregamos em sua
+                  residência.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="localizacao" class="mt-5">
+        <div class="container mb-5 mt-5">
+          <div class="row">
+            <div class="col-lg-12 col-12 mb-4 mb-lg-0">
+              <iframe
+                class="map-embed"
+                src="https://maps.google.com/maps?hl=pt-BR&q=Drogaria%20Nova%20Aparecida,%20Rua%20Leopoldino%20de%20Oliveira%2070,%20Aparecida,%20Belo%20Horizonte%20-%20MG&t=&z=17&ie=UTF8&iwloc=B&output=embed"
+                title="Mapa da Drogaria Nova Aparecida"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="col-lg-12 col-12">
               <iframe
                 src="https://www.youtube.com/embed/P7pRzAWxd4o"
                 title="YouTube video player"
@@ -195,265 +232,7 @@
         </div>
       </section>
 
-      <!-- Start feature Area -->
-      <section class="feature-area section-gap mt-5" id="servicos">
-        <div class="container box-grande">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="single-feature d-flex flex-row pb-30">
-                <div class="icon">
-                  <img class="" src="img/chest.png" alt="" />
-                </div>
-                <div class="desc">
-                  <h4 class="text-uppercase">Assistência Farmacêutica</h4>
-                  <p>
-                    Ações para proteção e recuperação da saúde, tanto individual
-                    como coletiva, tendo o medicamento como insumo essencial e
-                    visando o acesso e ao seu uso racional.
-                  </p>
-                </div>
-              </div>
-              <div class="single-feature d-flex flex-row pb-30">
-                <div class="icon">
-                  <img class="custom-icon" src="img/siringa.png" alt="" />
-                </div>
-                <div class="desc">
-                  <h4 class="text-uppercase">Aplicação de Injetáveis</h4>
-                  <p>
-                    Nossos clientes dispõem do serviço deaplicação de
-                    injetáveis, devidamente supervisionado por um responsável
-                    técnico farmacêutico.
-                  </p>
-                </div>
-              </div>
-              <div class="single-feature d-flex flex-row">
-                <div class="icon">
-                  <span class="lnr lnr-heart-pulse"></span>
-                </div>
-                <div class="desc">
-                  <h4 class="text-uppercase">Aferição de Pressão</h4>
-                  <p>
-                    Aferição de pressão mais assertiva utilizando o instrumento
-                    esfigmomanômetro.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="single-feature d-flex flex-row pb-30">
-                <div class="icon">
-                  <img class="" src="img/glicose.png" alt="" />
-                </div>
-                <div class="desc">
-                  <h4 class="text-uppercase">Aferição de Glicose</h4>
-                  <p>
-                    Serviço de aferição a glicemia para prevenção ou
-                    monitoramento de diabetes.
-                  </p>
-                </div>
-              </div>
-              <div class="single-feature d-flex flex-row pb-30">
-                <div class="icon">
-                  <img class="" src="img/brinco.png" alt="" />
-                </div>
-                <div class="desc">
-                  <h4 class="text-uppercase">Colocação de Brincos</h4>
-                  <p>
-                    Perfuração de lóbulo de orelha e colação dos brincos com
-                    todo processo de higienização.
-                  </p>
-                </div>
-              </div>
-              <div class="single-feature d-flex flex-row">
-                <div class="icon">
-                  <img class="" src="img/entrega.png" alt="" />
-                </div>
-                <div class="desc">
-                  <h4 class="text-uppercase">Entrega domiciliar</h4>
-                  <p>
-                    Para seu maior conforto, faça seu pedido sem sair de casa
-                    via whatsapp, telefone ou celular e entregamos em sua
-                    residência.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End feature Area -->
 
-      <!-- Start about Area
-			<section class="about-area" id="appoinment">
-				<div class="container-fluid color-gray">
-					<div class="row d-flex justify-content-end align-items-center">
-						<div class="col-lg-6 col-md-12 about-left no-padding">
-							<img class="img-fluid" src="img/about-img.jpg" alt="">
-						</div>
-						<div class="col-lg-6 col-md-12 about-right no-padding">
-							<h1>Contato</h1>
-							<form class="booking-form"  id="contact-form">
-								 	<div class="row">
-								 		<div class="col-lg-12 d-flex flex-column">
-							 				<input name="Nome" placeholder="Nome"  id="nameContact" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nome'" class="form-control mt-20" required="true" type="text" required>
-								 		</div>
-								 		<div class="col-lg-12 d-flex flex-column">
-							 				<input name="E-mail" placeholder="E-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-mail'" class="form-control mt-20" required="true"  id="emailContact" type="email" required>
-								 		</div>
-							 			<div class="col-lg-6 d-flex flex-column">
-											<input name="Celular" placeholder="(31)99999-9999" id="phoneContact"  onfocus="this.placeholder = ''" onblur="this.placeholder = '(31)99999-9999'" class="form-control mt-20" required="" type="number" required>
-										</div>
-										<div class="col-lg-6 d-flex flex-column">
-											<input name="Assunto" class="form-control mt-20" id="subjectContact"  onblur="this.placeholder = 'Assunto'" type="text" placeholder="Assunto" required>
-										</div>
-										<div class="col-lg-12 flex-column">
-											<textarea class="form-control mt-20" name="Mensagem"  id="messageContact" placeholder="Deixe aqui sua mensagem" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deixe aqui sua mensagem.'" required=""></textarea>
-										</div>
-
-										<div class="col-lg-12 d-flex justify-content-end send-btn">
-											<button class="primary-btn2  mt-20"  type="submit"> Enviar<span class="lnr lnr-arrow-right"></span></button>
-										</div>
-
-										 <div class="alert alert-danger center-block submit-fail-contact display-none mt-3">Por favor preencha o campo de e-mail.<br></div>
-	                   <div class="alert alert-success center-block submit-success-contact display-none mt-3">Recebemos o seu e-mail. Obrigado.</div>
-
-									</div>
-					  		</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- End about Area -->
-
-      <!-- Start consultans Area
-			<section class="consultans-area section-gap" id="consultant">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="col-md-8 pb-80 header-text">
-							<h1>Atendimento</h1>
-							<p>
-							A nossa equipe qualificada para atender nossos clientes prestando o melhor atendimento possível.
-							</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-3 col-md-3 vol-wrap">
-							<div class="single-con">
-								<div class="content">
-								    <a href="#" target="_blank">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img/c1.jpg" alt="">
-								      	<div class="content-details fadeIn-bottom">
-								      		<h4>Andy Florence</h4>
-								      		<p>
-								      			inappropriate behavior
-								      		</p>
-								      	</div>
-								    </a>
-								 </div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-3 vol-wrap">
-							<div class="single-con">
-								<div class="content">
-								    <a href="#" target="_blank">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img/c2.jpg" alt="">
-								      	<div class="content-details fadeIn-bottom">
-								      		<h4>Andy Florence</h4>
-								      		<p>
-								      			inappropriate behavior
-								      		</p>
-								      	</div>
-								    </a>
-								 </div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-3 vol-wrap">
-							<div class="single-con">
-								<div class="content">
-								    <a href="#" target="_blank">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img/c3.jpg" alt="">
-								      	<div class="content-details fadeIn-bottom">
-								      		<h4>Andy Florence</h4>
-								      		<p>
-								      			inappropriate behavior
-								      		</p>
-								      	</div>
-								    </a>
-								 </div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-3 vol-wrap">
-							<div class="single-con">
-								<div class="content">
-								    <a href="#" target="_blank">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img/c4.jpg" alt="">
-								      	<div class="content-details fadeIn-bottom">
-								      		<h4>Andy Florence</h4>
-								      		<p>
-								      			inappropriate behavior
-								      		</p>
-								      	</div>
-								    </a>
-								 </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- End consultans Area -->
-
-      <!-- Start fact Area -->
-      <!-- <section class="facts-area pt-100 pb-100">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-3 col-md-6 single-fact">
-							<h2 class="counter">2536</h2>
-							<p class="text-uppercase">Clients Served</p>
-						</div>
-						<div class="col-lg-3 col-md-6 single-fact">
-							<h2 class="counter">6784</h2>
-							<p class="text-uppercase">X-rays Done</p>
-						</div>
-						<div class="col-lg-3 col-md-6 single-fact">
-							<h2 class="counter">1059</h2>
-							<p class="text-uppercase">Worldwide stuff</p>
-						</div>
-						<div class="col-lg-3 col-md-6 single-fact">
-							<h2 class="counter">2239</h2>
-							<p class="text-uppercase">Lives Saved</p>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- end fact Area -->
-
-      <!-- Start blog Area -->
-      <section class="blog-area section-gap">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8 pb-30 header-text">
-              <h1>Últimas postagens</h1>
-              <p>
-                Acompanhe o instagram da
-                <a href="https://www.instagram.com/drogarianovaaparecida/"
-                  >@drogarianovaaparecida</a
-                >
-                para saber as novidades, promoções e eventos.
-              </p>
-            </div>
-          </div>
-          <div class="row mb-5">
-            <div data-behold-id="jPAjLeynPWWJEUJ1qY3m"></div>
-            <script src="https://w.behold.so/widget.js" type="module"></script>
-          </div>
-        </div>
-      </section>
-      <!-- end blog Area -->
       <div class="box_whatsapp">
         <a href="https://api.whatsapp.com/send?phone=5531993688138"
           ><i class="fa fa-whatsapp icon_whatsapp"></i
@@ -461,22 +240,30 @@
       </div>
 
       <!-- start footer Area -->
-      <footer class="footer-area section-gap">
+      <footer class="footer-area section-gap pharm-footer" id="contato">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-2 col-md-6">
-              <div class="single-footer-widget">
-                <h6>Acesso rápido</h6>
-                <ul class="footer-nav font-white">
-                  <li><a href="#home">Home</a></li>
-                  <li><a href="#service">Serviços</a></li>
-                  <li><a href="#appoinment">Contato</a></li>
-                  <li><a href="#consultant">Atendimento</a></li>
-                </ul>
+          <div class="row pharm-footer-top">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 d-flex">
+              <div class="single-footer-widget pharm-footer-brand" style="width:100%;">
+                <img class="img-fluid logo-svg mb-3" src="img/logo.svg" alt="Drogaria Nova Aparecida" />
+                <p class="font-white pharm-footer-tagline">
+                  Cuidando da sua saúde com atenção, tradição e atendimento próximo de verdade.
+                </p>
+                <div class="pharm-footer-social">
+                  <a href="https://www.facebook.com/drogarianovaaparecida/" target="_blank" rel="noopener noreferrer"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                  <a href="https://www.instagram.com/drogarianovaaparecida/" target="_blank" rel="noopener noreferrer"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                  <a href="https://api.whatsapp.com/send?phone=5531993688138" target="_blank" rel="noopener noreferrer"
+                    ><i class="fa fa-whatsapp"></i
+                  ></a>
+                </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="single-footer-widget mail-chimp">
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 d-flex">
+              <div class="single-footer-widget mail-chimp pharm-footer-card" style="width:100%;">
                 <h6 class="mb-20">Atendimento</h6>
                 <p class="font-white">
                   De Segunda a Sábado: 7:30h às 21:30h <br />
@@ -486,20 +273,30 @@
                 <h4 class="font-white-gradient">(31) 3428-6170</h4>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="single-footer-widget mail-chimp">
+            <div class="col-lg-4 col-md-6 d-flex">
+              <div class="single-footer-widget mail-chimp pharm-footer-card" style="width:100%;">
                 <h6 class="mb-20">Localização</h6>
                 <p class="font-white">
-                  R. Leopoldino de Oliveira, 56, Aparecida. BH/MG <br /><br />
+                  R. Leopoldino de Oliveira, 70, Aparecida. BH/MG <br /><br />
                   CEP: 31230-540
                 </p>
+                <a
+                  class="pharm-footer-link"
+                  href="https://www.google.com/maps?q=Drogaria+Nova+Aparecida+Belo+Horizonte"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Abrir no Google Maps</a
+                >
               </div>
             </div>
-            <div class="col-lg-3 col-md-12">
-              <div class="single-footer-widget font-white newsletter">
+          </div>
+
+          <div class="row pharm-footer-newsletter">
+            <div class="col-lg-12 col-md-12">
+              <div class="single-footer-widget font-white newsletter pharm-footer-card">
                 <h6>Inscreva-se</h6>
                 <p class="font-white">
-                  Receba as novidades,promoções e eventos por e-mail.
+                  Receba novidades e campanhas da Drogaria Nova Aparecida por e-mail.
                 </p>
                 <div id="mc_embed_signup">
                   <form class="form-inline" id="subscribe-form">
@@ -538,31 +335,42 @@
             </div>
           </div>
 
-          <div class="row footer-bottom d-flex justify-content-between">
-            <p class="col-lg-8 col-sm-12 font-white m-0">
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              Copyright &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              Todos os direitos reservados a Drogaria Nova Aparecida.
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-            <div class="col-lg-4 col-sm-12 footer-social">
-              <a href="https://www.facebook.com/drogarianovaaparecida/"
-                ><i class="fa fa-facebook"></i
-              ></a>
-              <a href="https://www.instagram.com/drogarianovaaparecida/"
-                ><i class="fa fa-instagram"></i
-              ></a>
-              <a href="https://api.whatsapp.com/send?phone=5531993688138"
-                ><i class="fa fa-whatsapp"></i
-              ></a>
+          <div class="row footer-bottom d-flex justify-content-between align-items-center pharm-footer-bottom">
+            <div class="col-lg-7 col-sm-12">
+              <p class="font-white m-0">
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                Todos os direitos reservados a Drogaria Nova Aparecida.
+              </p>
+              <p class="font-white m-0">
+                CNPJ: 18.031.484/0001-00 | Razão Social: Drogaria Nova Aparecida LTDA
+              </p>
+              <p class="font-white m-0">
+                E-mail: contato@dnabh.com.br
+              </p>
+            </div>
+            <div class="col-lg-5 col-sm-12 text-lg-right mt-3">
+              <a class="pharm-footer-mini-link" href="#inicio">Início</a>
+              <a class="pharm-footer-mini-link" href="#localizacao">Localização</a>
+              <a class="pharm-footer-mini-link" href="#servicos">Serviço</a>
+              <a class="pharm-footer-mini-link" href="politica-de-privacidade.html">Política de Privacidade</a>
+              <a class="pharm-footer-mini-link" href="termos-de-uso.html">Termos de Uso</a>
             </div>
           </div>
         </div>
       </footer>
       <!-- End footer Area -->
+
+      <div class="cookie-consent" id="cookieConsent" aria-live="polite" aria-label="Aviso de cookies">
+        <p>
+          Utilizamos cookies para melhorar sua experiência, analisar acessos e oferecer um atendimento mais eficiente.
+          Ao continuar navegando, você concorda com nossa
+          <a href="politica-de-privacidade.html">Política de Privacidade</a>.
+        </p>
+        <button id="acceptCookies" type="button">Aceitar</button>
+      </div>
 
       <script src="js/vendor/jquery-2.2.4.min.js"></script>
       <script
@@ -580,47 +388,7 @@
       <script src="js/waypoints.min.js"></script>
       <script src="js/jquery.counterup.min.js"></script>
       <script src="js/main.js"></script>
-      <script type="text/javascript" src="js/instafeed.min.js"></script>
-      <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzS-MdjWVEpo36q3y_HXoYEeeHXg0DGLs&callback=initMap&v=weekly"
-        defer
-      ></script>
       <script>
-        // Initialize and add the map
-        function initMap() {
-          // The location of Uluru
-
-          const uluru = { lat: -19.89331294552461, lng: -43.95839586011853 };
-          // The map, centered at Uluru
-          const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 19,
-            center: uluru,
-          });
-          // The marker, positioned at Uluru
-          const marker = new google.maps.Marker({
-            position: uluru,
-            map: map,
-          });
-        }
-
-        window.initMap = initMap;
-
-        var userFeed = new Instafeed({
-          get: "user",
-          userId: "110804393747030",
-          clientId: "456272235286434",
-          accessToken: "10faf6ba77409ad9ae850124d7e27a92",
-          resolution: "standard_resolution",
-          template:
-            '<div class="single-blog col-lg-4 col-md-4"><a href="{{link}}" target="_blank" id="{{id}}"><img class="f-img img-fluid mx-auto" src="{{image}}" alt=""></a><p>{{caption}}</p></div>',
-          sortBy: "most-recent",
-          limit: 3,
-          links: false,
-        });
-        userFeed.run();
-
-        //924f677fa3854436947ab4372ffa688d
-
         $(document).ready(function () {
           $("#subscribe-form").submit(function (e) {
             var email = $("#emailSubscribe");
@@ -667,6 +435,21 @@
           $(".submit-fail-contact, .submit-success-contact").click(function () {
             $(this).hide();
           });
+
+          var cookieConsent = document.getElementById("cookieConsent");
+          var acceptCookies = document.getElementById("acceptCookies");
+          var consentKey = "dna_cookie_consent";
+
+          if (cookieConsent && !localStorage.getItem(consentKey)) {
+            cookieConsent.classList.add("is-visible");
+          }
+
+          if (acceptCookies) {
+            acceptCookies.addEventListener("click", function () {
+              localStorage.setItem(consentKey, "accepted");
+              cookieConsent.classList.remove("is-visible");
+            });
+          }
         });
       </script>
     </div>
