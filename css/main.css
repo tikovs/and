@@ -3017,6 +3017,13 @@ p {
   color: #325083;
 }
 
+.service-card .icon i.fa {
+  font-size: 156px !important;
+  line-height: 1 !important;
+  color: #325083 !important;
+  -webkit-text-fill-color: #325083;
+}
+
 .service-card h4 {
   color: #203456;
   font-size: clamp(30px, 3.2vw, 52px);
@@ -3130,32 +3137,36 @@ p {
   .service-card:nth-child(odd) .icon,
   .service-card:nth-child(even) .icon {
     order: 0;
-    width: 108px;
-    min-width: 108px;
-    height: 108px;
+    width: 122px;
+    min-width: 122px;
+    height: 122px;
     margin: 0;
   }
 
   .service-card .icon img,
   .service-card .icon .custom-icon {
-    width: 80px;
-    height: 80px;
-    max-width: 80px;
-    max-height: 80px;
+    width: 92px;
+    height: 92px;
+    max-width: 92px;
+    max-height: 92px;
   }
 
   .service-card .icon .lnr,
   .service-card .icon i {
-    font-size: 80px;
+    font-size: 92px;
+  }
+
+  .service-card .icon i.fa {
+    font-size: 92px !important;
   }
 
   .service-card h4 {
-    font-size: 21px;
+    font-size: 24px;
     margin-bottom: 8px;
   }
 
   .service-card p {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .reveal-card,
@@ -3207,6 +3218,16 @@ p {
 
 .pharm-logo-wrap {
   max-width: 260px;
+}
+
+@media (max-width: 575px) {
+  .pharm-logo-wrap {
+    max-width: 120px;
+  }
+
+  .pharm-header .logo-svg {
+    width: 100%;
+  }
 }
 
 .pharm-logo-link {
@@ -3427,9 +3448,9 @@ p {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991px) and (min-width: 576px) {
   .pharm-header .logo-svg {
-    width: 50%;
+    width: 30%;
   }
 }
 
